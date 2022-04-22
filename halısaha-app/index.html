@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TNKSK.ORG</title>
+
+    <!-- sekme-icon -->
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/splide.min.css">
+
+    <script src="https://kit.fontawesome.com/234db116ca.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-area-border mb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-xl-2">
+                        <div class="nav-logo">
+                            <img src="img/logo.png" alt="logo">
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-xl-10">
+                        <div class="nav-title">
+                            <h1>
+                                Halısaha Programı
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="container">
+            <div class="row mb-3 gx-3">
+                <div class="col-md-4">
+                    <div class="dayTitle title borderTitle">Gün</div>
+                </div>
+                <div class="col-md-4">
+                    <div class="timeTitle title borderTitle">Saat</div>
+                </div>
+                <div class="col-md-4">
+                    <div class="priceTitle title borderTitle">Fiyat</div>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <div class="günInfo titleDay">
+                        <select class="form-select" aria-label="Default select example" id="dayPicker">
+                            <option value="Pazartesi" >Pazartesi</option>
+                            <option value="Salı">Salı</option>
+                            <option value="Çarşamba">Çarşamba</option>
+                            <option value="Perşembe">Perşembe</option>
+                            <option value="Cuma">Cuma</option>
+                            <option value="Cumartesi">Cumartesi</option>
+                            <option value="Pazar">Pazar</option>
+                          </select>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="timeInfo">
+                        <select class="form-select" aria-label="Default select example" id="timePicker">
+                            <option value="1">9-10</option>
+                            <option value="2">10-11</option>
+                            <option value="3">11-12</option>
+                            <option value="4">12-13</option>
+                            <option value="5">13-14</option>
+                            <option value="6">14-15</option>
+                            <option value="7">16-17</option>
+                            <option value="8">17-18</option>
+                            <option value="9">18-19</option>
+                            <option value="10">19-20</option>
+                            <option value="11">20-21</option>
+                            <option value="12">21-22</option>
+                            <option value="13">22-23</option>
+                            <option value="14">23-24</option>
+                          </select>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="priceCon">
+                        <select name="priceSelected" id="priceSelected" class="form-select" aria-label="Default select example">
+                            <option value="165">165 TL</option>
+                            <option value="250">250 TL</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="submitButtonCon">
+                        <button class="btn btn-dark" onclick="submitFunction()" id="submitButton">Gönder</button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="requestButtonCon">
+                        <button class="btn btn-dark" onclick="requestFunction()" id="rquestButton">Topla Ve Göster</button>
+                    </div>
+                </div>
+                <div class="col-md-12 mt-4">
+                    <div class="rquestAreaCon" id="rquestArea">
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="rquestAreaCon" id="requestCON">
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-12">
+                    <div class="veriableButton">
+                        <button class="btn btn-dark" onclick="allInfoVeriable()">
+                            Tüm Kayıtları Göster
+                        </button>
+                        <div class="allInfoVeriableDiv mt-2" id="allInfoVeriableDiv"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- footer-area-start -->
+        <div class="container-breakpoint top-margin">
+            <!-- Footer -->
+            <footer class="text-center text-lg-start text-white" style="background-color: #1c2331">
+                <!-- Section: Social media -->
+                <section class="d-flex justify-content-between p-4" style="background-color: #F9D71C">
+                    <!-- Left -->
+                    <div class="me-5 footer-social-title">
+                        <span>Sosyal Medya Hesaplarımız: <span>
+                    </div>
+                    <!-- Left -->
+                    <!-- Right -->
+                    <div class="footer-top-social-icons">
+                        <a href="#" class="text-white me-4">
+                            <i class="fa-brands fa-facebook footer-icon-section"></i>
+                        </a>
+                        <a href="#" class="text-white me-4">
+                            <i class="fa-brands fa-twitter footer-icon-section"></i>
+                        </a>
+                        <a href="" class="text-white me-4">
+                            <i class="fa-brands fa-instagram footer-icon-section"></i>
+                        </a>
+                        <a href="" class="text-white me-4">
+                            <i class="fa-brands fa-youtube footer-icon-section"></i>
+                        </a>
+                        </a>
+                    </div>
+                    <!-- Right -->
+                </section>
+                <!-- Section: Social media -->
+    
+                <!-- Section: Links  -->
+                <section class="">
+                    <div class="container text-center text-md-start mt-5">
+                        <!-- Grid row -->
+                        <div class="row mt-3">
+                            <!-- Grid column -->
+                            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 footer-logo">
+                                <img src="img/logo.png" alt="">
+                            </div>
+                            <!-- Grid column -->
+    
+                            <!-- Grid column -->
+                            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                                <!-- Links -->
+                                <h6 class="text-uppercase fw-bold">Ürünlerimiz</h6>
+                                <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                    style="width: 60px; background-color: #F9D71C; height: 2px" />
+                                <p>
+                                    <a href="#!" class="text-white">Formalarımız</a>
+                                </p>
+                                <p>
+                                    <a href="#!" class="text-white">Formalarımız</a>
+                                </p>
+                                <p>
+                                    <a href="#!" class="text-white">Formalarımız</a>
+                                </p>
+                                <p>
+                                    <a href="#!" class="text-white">Tüm Ürünlerimiz</a>
+                                </p>
+                            </div>
+                            <!-- Grid column -->
+    
+                            <!-- Grid column -->
+                            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                                <!-- Links -->
+                                <h6 class="text-uppercase fw-bold">Bize Ulaşın</h6>
+                                <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                    style="width: 60px; background-color: #F9D71C; height: 2px;" />
+                                <p>
+                                    <a href="hakkımızda.html" class="text-white">Hakkımızda</a>
+                                </p>
+                                <p>
+                                    <a href="#" class="text-white">Oyuncularımız</a>
+                                </p>
+                                <p>
+                                    <a href="#!" class="text-white">Teknik Kurulumuz</a>
+                                </p>
+                                <p>
+                                    <a href="#!" class="text-white">Yönetim Kurulumuz</a>
+                                </p>
+                            </div>
+                            <!-- Grid column -->
+    
+                            <!-- Grid column -->
+                            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                                <!-- Links -->
+                                <h6 class="text-uppercase fw-bold">İletişim</h6>
+                                <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #F9D71C; height: 2px" />
+                                <p><i class="fas fa-home mr-3"></i> Kısa Adres</p>
+                                <p><i class="fas fa-envelope mr-3"></i> info@example.com</p>
+                                <p><i class="fas fa-phone mr-3"></i> 0555 555 55 55</p>
+                                <p><i class="fas fa-print mr-3"></i> 0555 555 55 55</p>
+                            </div>
+                            <!-- Grid column -->
+                        </div>
+                        <!-- Grid row -->
+                    </div>
+                </section>
+                <!-- Section: Links  -->
+                <!-- Copyright -->
+                <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+                    © 2022 Copyright
+                    <a class="text-white" href="https://www.linkedin.com/in/murat-baş-709a831a2/" target="_blank">Noctis</a>
+                </div>
+                <!-- Copyright -->
+            </footer>
+            <!-- Footer -->
+        </div>
+        <!-- End of .container -->
+        <!-- footer-area-ned -->
+
+</body>
+
+    <!-- Js -->
+    <script src="js/app.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</html>
